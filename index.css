@@ -1,1 +1,78 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: #071F49;
+}
 
+nav{
+    min-height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto 20px;
+    
+}
+
+.rubriques{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rubrique-deco{
+    text-decoration: none;
+    color: white;
+}
+
+.actuel{
+    text-decoration: none;
+    color: white;
+    border-bottom: 3px solid #F5D42D;
+    padding: 10px;
+}
+
+.rubrique-deco:hover{
+    color: #A50044;
+}
+
+.actuel:hover{
+    color: #A50044;
+}
+
+.main-accueil{
+    display: flex;
+    flex-direction: column;
+}
+
+.upper-part{
+    color: black;
+    height: 50%;
+
+}
+
+.upper-left{
+    width: 50%;
+}
+
+.lower-part{
+    margin: auto 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.lower-part h2{
+    padding-top: 20px;
+}
+
+.actu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    
+    
+}
