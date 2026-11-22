@@ -386,3 +386,10 @@ button{
     background-color: #A50044;
     color: white;
 }
+
+footer{
+    color: #F5D42D;
+    text-align: center;
+    padding: 18px;
+    margin-top: 40px;
+}
