@@ -393,3 +393,109 @@ footer{
     padding: 18px;
     margin-top: 40px;
 }
+
+
+
+@media screen and (max-width: 768px) {
+
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px 0;
+    }
+
+    .titre h1 {
+        font-size: 22px;
+    }
+
+    .logo {
+        width: 50px;
+        height: 55px;
+    }
+
+    .rubriques {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 18px;
+    }
+
+
+
+    .upper-part {
+        min-height: 350px;
+    }
+
+    .upper-left {
+        width: auto;
+        padding: 20px;
+    }
+
+    .actu {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .actu img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* PALMARES */
+
+    .palmarès-pricipal {
+        flex-direction: column;
+    }
+
+    .palmarès-upper-left {
+        width: auto;
+    }
+
+    .palmarès-mid-part {
+        width: 95%;
+        padding: 15px;
+        overflow-x: auto;
+    }
+
+    .palmarès-mid-part table {
+        min-width: 450px;
+    }
+
+    .palmarès-description {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+    .presentation-stade,
+    .infos-stade,
+    .legende-stade {
+        grid-template-columns: 1fr;
+        gap: 0;
+        padding: 20px;
+    }
+
+    .presentation-stade img,
+    .infos-stade img {
+        width: 100%;
+        height: auto;
+    }
+
+    .texte-stade,
+    .texte-legende {
+        padding: 15px;
+    }
+
+
+
+    .formulaire {
+        padding: 25px 15px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+}
+
