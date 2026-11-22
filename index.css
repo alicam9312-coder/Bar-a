@@ -156,7 +156,7 @@ nav{
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
 
-.palmarès-pricipal{
+.palmarès-principal{
     display: flex;
     flex-direction: row;
 }
@@ -396,13 +396,20 @@ footer{
 
 
 
+
 @media screen and (max-width: 768px) {
 
 
     nav {
         flex-direction: column;
-        gap: 20px;
-        padding: 15px 0;
+        gap: 15px;
+        margin: 0;
+        padding: 15px;
+    }
+
+    .titre {
+        justify-content: center;
+        gap: 10px;
     }
 
     .titre h1 {
@@ -418,23 +425,39 @@ footer{
         width: 100%;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 18px;
+        gap: 20px;
     }
 
 
-
     .upper-part {
-        min-height: 350px;
+        min-height: 400px;
+        display: flex;
+        align-items: center;
     }
 
     .upper-left {
         width: auto;
+        margin: 15px;
         padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .upper-left h1 {
+        font-size: 28px;
+    }
+
+    .upper-left h2 {
+        font-size: 21px;
     }
 
     .actu {
         flex-direction: column;
+        align-items: center;
         gap: 25px;
+    }
+
+    .actu div {
+        width: 100%;
     }
 
     .actu img {
@@ -442,14 +465,24 @@ footer{
         height: auto;
     }
 
-    /* PALMARES */
 
-    .palmarès-pricipal {
+    .palmarès-principal {
+        display: flex;
         flex-direction: column;
+    }
+
+    .palmarès-upper-part {
+        min-height: 300px;
     }
 
     .palmarès-upper-left {
         width: auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .palmarès-upper-left h1 {
+        font-size: 28px;
     }
 
     .palmarès-mid-part {
@@ -462,9 +495,24 @@ footer{
         min-width: 450px;
     }
 
+    .palmarès-mid-part th,
+    .palmarès-mid-part td {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .palmarès-lower-part {
+        height: auto;
+        margin: 20px;
+    }
+
     .palmarès-description {
         flex-direction: column;
         gap: 20px;
+    }
+
+    .palmarès-description img {
+        max-width: 100%;
     }
 
 
@@ -472,7 +520,7 @@ footer{
     .infos-stade,
     .legende-stade {
         grid-template-columns: 1fr;
-        gap: 0;
+        gap: 20px;
         padding: 20px;
     }
 
@@ -484,18 +532,75 @@ footer{
 
     .texte-stade,
     .texte-legende {
-        padding: 15px;
+        padding: 10px;
     }
 
+    .mes-que-un-club {
+        padding: 40px 15px;
+    }
 
 
     .formulaire {
         padding: 25px 15px;
     }
 
-    form {
+    .formulaire h2 {
+        font-size: 23px;
+    }
+
+    .formulaire form {
         width: 100%;
+        box-sizing: border-box;
+    }
+
+    .formulaire input,
+    .formulaire textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+
+    footer {
+        text-align: center;
+        padding: 15px;
     }
 
 }
+
+
+
+@media screen and (max-width: 480px) {
+
+    .titre h1 {
+        font-size: 19px;
+    }
+
+    .logo {
+        width: 45px;
+        height: 50px;
+    }
+
+    .rubriques {
+        gap: 15px;
+    }
+
+    .upper-left h1 {
+        font-size: 24px;
+    }
+
+    .palmarès-upper-left h1 {
+        font-size: 24px;
+    }
+
+    .palmarès-mid-part h2 {
+        font-size: 20px;
+    }
+
+    .texte-stade h2,
+    .texte-legende h2 {
+        font-size: 23px;
+    }
+
+}
+
 
